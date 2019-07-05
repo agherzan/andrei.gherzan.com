@@ -1,0 +1,33 @@
+/**
+ * Style variables
+ */
+$base-color:           #DBDBDB !default;
+$primary-color:        #a1fc8f !default;
+$text-color:           $base-color !default;
+$placeholder-color:    $base-color !default;
+$link-color:           $base-color !default;
+$border:               dashed 1px rgba(193,10,40,0.99) !default;
+$selection-background: rgba(219,219,219,0.99) !default;
+$selection-text:       #000 !default;
+$background-color:     #1b1b1c !default;
+$accent-color:         rgb(225,22,36);
+$accent-color2:         rgb(112,112,112);
+
+$apple-blossom: #ac4142;
+$alto: #d0d0d0;
+$bouquet: #aa759f;
+$chelsea-cucumber: #90a959;
+$cod-grey: #151515;
+$conifer: #b5e853;
+$dove-grey: #666;
+$gallery: #eaeaea;
+$grey: #888;
+$gulf-stream: #75b5aa;
+$hippie-blue: #6a9fb5;
+$potters-clay: #8f5536;
+$rajah: #f4bf75;
+$raw-sienna: #d28445;
+$silver-chalice: #aaa;
+
+@import "base";
+@import "rouge-base16-dark";

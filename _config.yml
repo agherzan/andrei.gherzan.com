@@ -1,0 +1,11 @@
+title: Braindump
+author: Andrei Gherzan
+
+header_pages:
+  - index.md
+  - contact.md
+
+style: dark
+
+plugins:
+  - jekyll-seo-tag
