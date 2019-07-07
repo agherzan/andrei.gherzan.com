@@ -8,6 +8,7 @@ header_pages:
 style: dark
 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
 
 twitter:

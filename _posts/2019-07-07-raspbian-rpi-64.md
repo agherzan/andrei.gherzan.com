@@ -2,8 +2,8 @@
 layout:	post
 title: 64bit kernel on Raspberry Pi
 description: Compile a 64 bit kernel for a supported Raspberry Pi board and deploy it on a Raspbian image
-categories: [linux]
-tags: [kernel, raspberrypi, raspbian, 64bit, aarch64, arm64, toolchain, gcc]
+excerpt: Compile a 64 bit kernel for a supported Raspberry Pi board and deploy it on a Raspbian image
+category: linux
 ---
 
 ### TL;DR
