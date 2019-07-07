@@ -1,7 +1,9 @@
 ---
-title: /contact
+title: "braindump(ag)"
+description: Contact details
+menu: /contact
 layout: page
-permalink: /contact.html
+permalink: /contact
 ---
 
 # Who?

@@ -1,4 +1,4 @@
-title: Braindump
+title: braindump(ag)
 author: Andrei Gherzan
 
 header_pages:
@@ -9,3 +9,8 @@ style: dark
 
 plugins:
   - jekyll-seo-tag
+
+twitter:
+  username: agherzan
+
+permalink: /:categories/:title/
