@@ -9,7 +9,7 @@ $base-font-size:       16px !default;
 $top-font-size:        32px !default;
 $title-font-size:      28px !default;
 $subtitle-font-size:   20px !default;
-$mobile-font-size:     12px !default;
+$mobile-font-size:     16px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  1000px !default;
@@ -73,7 +73,7 @@ footer { margin-bottom: 20px; }
 .site-title { font-size: $top-font-size; font-weight: bold; color: $accent-color}
 .site-title a { text-decoration: none;  color: $accent-color; }
 .site-title a:hover { text-decoration: none; color: $accent-color}
-.site-subtitle { font-size: $base-font-size; font-weight: italic; margin-top: -5px; margin-left: 4px; margin-bottom: 30px; color: $accent-color2}
+.site-subtitle { font-size: $base-font-size; font-weight: italic; margin-top: -5px; margin-left: 0px; margin-bottom: 30px; color: $accent-color2}
 .site-subtitle a { text-decoration: none;  color: $accent-color2; }
 .site-subtitle a:hover { text-decoration: none; color: $accent-color2}
 
