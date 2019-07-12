@@ -10,8 +10,17 @@ style: dark
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 twitter:
   username: agherzan
 
 permalink: /:categories/:title/
+
+include: ['key.asc']
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
