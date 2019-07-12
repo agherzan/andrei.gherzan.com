@@ -1,9 +1,10 @@
 ---
-layout:	post
+layout:	braindump
 title: 64bit kernel on Raspberry Pi
 description: Compile a 64 bit kernel for a supported Raspberry Pi board and deploy it on a Raspbian image
 excerpt: Compile a 64 bit kernel for a supported Raspberry Pi board and deploy it on a Raspbian image
 category: linux
+image: /assets/img/rpi-logo.png
 ---
 
 ### TL;DR
@@ -13,7 +14,7 @@ category: linux
 
 # About
 
-I should start this post by trying to address the question `Why?`. It is not an easy one. The performance impact is minimal. Maintaining the [Yocto Raspberry Pi BSP layer](https://github.com/agherzan/meta-raspberrypi), I have user reports which state that in video applications there is some noticeable gain but that is with kernel and user-space on 64bit. This post doesn't address the user-space bit as it is based on Raspbian. If you want to go full 64, probably the easiest way forward remains `Yocto/buildroot`. Otherwise consider this an exercise for running your benchmarks or giving 64bit kernel a try.
+![Raspberry Pi Logo](/assets/img/rpi-logo.png){:class="image-right"}I should start this braindump by trying to address the question `Why?`. It is not an easy one. The performance impact is minimal. While maintaining the [Yocto Raspberry Pi BSP layer](https://github.com/agherzan/meta-raspberrypi), I have heard people saying that running video applications shows some noticeable performance gain - but that is with kernel and user-space on 64bit. This braindump doesn't address the user-space part as it is based on Raspbian. If you want to go full 64, probably the easiest way forward remains `Yocto/buildroot`. Otherwise consider this an exercise for running your benchmarks or giving 64bit kernel a try.
 
 ## A. Compile aarch64 toolchain
 
@@ -97,7 +98,7 @@ This will get us a kernel image, the associated kernel modules and a device tree
 
 ## C. Deploy the compiled 64bit kernel on a Raspbian image
 
-You now have all the bits to proceed in modifying a Raspbian image to boot a Raspberry Pi board in 64bit mode. First thing first, download Raspbian and burn it with any tool you prefer. I'd use [etcher](https://www.balena.io/etcher/). Mount the boot partition and copy kernel image and the kernel modules on it. The following commands assume that the boot partition mount point is `/run/media/me/boot`i and the root filesystem mount point is `/run/media/me/rootfs`. Also, the paths rely on the exports set throughout this post.
+You now have all the bits to proceed in modifying a Raspbian image to boot a Raspberry Pi board in 64bit mode. First thing first, download Raspbian and burn it with any tool you prefer. I'd use [etcher](https://www.balena.io/etcher/). Mount the boot partition and copy kernel image and the kernel modules on it. The following commands assume that the boot partition mount point is `/run/media/me/boot`i and the root filesystem mount point is `/run/media/me/rootfs`. Also, the paths rely on the exports set throughout this braindump.
 
 ```sh
 cp $KERNEL_BUILD_DIR/arch/arm64/boot/Image /run/media/me/boot/kernel8.img

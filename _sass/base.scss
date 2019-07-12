@@ -9,7 +9,7 @@ $base-font-size:       16px !default;
 $top-font-size:        32px !default;
 $title-font-size:      28px !default;
 $subtitle-font-size:   20px !default;
-$mobile-font-size:     16px !default;
+$mobile-font-size:     14px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  1000px !default;
@@ -112,4 +112,22 @@ code.highlighter-rouge {
    margin: 0px -3px;
    color: $accent-color2;
    border-radius: 2px;
+}
+
+img {
+	width: 200px;
+}
+
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+.image-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
 }
