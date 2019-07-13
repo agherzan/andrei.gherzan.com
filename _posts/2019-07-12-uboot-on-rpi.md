@@ -1,8 +1,8 @@
 ---
 layout:	braindump
-title: u-boot on Raspberry Pi (including RPi 4)
-description: Chain u-boot in the boot process of a Raspberry Pi
-excerpt: Chain u-boot in the boot process of a Raspberry Pi
+title: U-Boot on Raspberry Pi (including RPi 4)
+description: Chain U-Boot in the boot process of a Raspberry Pi (including Raspberry Pi 4)
+excerpt: Chain U-Boot in the boot process of a Raspberry Pi (including Raspberry Pi 4)
 category: linux
 image: /assets/img/rpi-logo.png
 ---
@@ -12,7 +12,7 @@ image: /assets/img/rpi-logo.png
 - guide for compiling u-boot for Raspberry Pi boards
 - guide for chaining u-boot in the boot process of Raspbian
 
-# About
+## About
 
 [U-Boot](https://www.denx.de/wiki/U-Boot), `Das U-Boot`, is a very common bootloader in embedded systems. It includes support for various computer architectures and, following this guide, you will be able to run it on your Raspberry Pi.
 
@@ -51,8 +51,8 @@ We have the code, now we can proceed to compilation. We will be using different 
 
 - Raspberry Pi 3 (32b): `rpi_3_32b_defconfig`
 - Raspberry Pi 3 (64b): `rpi_3_defconfig`
-- Raspberry Pi 3 (32b): `rpi_4_32b_defconfig`
-- Raspberry Pi 3 (64b): `rpi_4_defconfig`
+- Raspberry Pi 4 (32b): `rpi_4_32b_defconfig`
+- Raspberry Pi 4 (64b): `rpi_4_defconfig`
 
 Also, you will need the name of the toolchain. This is the `triplet` of the tools available in the toolchain's bin directory. For example if you toolchain includes the `ar` archiver as a file called `arm-linux-gnueabihf-ar`, the `CROSS_COMPILE` variable used by U-Boot compile process will be `CROSS_COMPILE=$TOOLCHAIN/arm-linux-gnueabihf-`. Make sure you adapt this variable below for other toolchains.
 
@@ -89,8 +89,8 @@ You now have all the required elements to proceed in modifying a Raspbian image 
 The Raspberry Pi bootloader selects a kernel image from the boot partition based on the board it boots:
 
 - `kernel8` for Raspberry Pi 3 and 4 in 64 bit mode
-- `kernel7l.img` for Raspberry Pi 4 and 32bit mode
-- `kernel7.img` for Raspberry Pi 2 and 3 and 32bit mode
+- `kernel7l.img` for Raspberry Pi 4 in 32bit mode (with LPAE)
+- `kernel7.img` for Raspberry Pi 2, 3 and 4 in 32bit mode (no LPAE)
 - `kernel.img` for the rest
 
 Let's define the one you are targeting so the next commands can simply use a variable:
