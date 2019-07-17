@@ -91,6 +91,7 @@ PATH=$PATH:$TOOLCHAIN/bin make O=./kernel-build/ ARCH=arm64 CROSS_COMPILE=aarch6
 PATH=$PATH:$TOOLCHAIN/bin make -j4 O=./kernel-build/ ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
 export KERNEL_VERSION=`cat ./kernel-build/include/generated/utsrelease.h | sed -e 's/.*"\(.*\)".*/\1/'` # we extract and export the kernel version to be able to correctly deploy the modules below when deploying them on the Raspbian image
 make -j4 O=./kernel-build/ DEPMOD=echo MODLIB=./kernel-install/lib/modules/${KERNEL_VERSION} INSTALL_FW_PATH=./kernel-install/lib/firmware modules_install
+depmod --basedir kernel-install "$KERNEL_VERSION"
 export KERNEL_BUILD_DIR=`realpath kernel-build` # used if you want to deploy it to Raspbian, ignore otherwise
 ```
 
@@ -120,11 +121,4 @@ uname -a
 Linux raspberrypi 4.19.56-v8+ #1 SMP PREEMPT Thu Jul 4 12:43:20 BST 2019 aarch64 GNU/Linux
 ```
 
-At first boot all the kernel modules will fail loading. This is because the kernel modules dependency files are not generated. You will need to run `depmod`.
-
-```sh
-sudo depmod -a
-sudo reboot
-```
-
-At next boot everything should be up and running, that is a Raspbian 32bit user-space on a 64bit linux kernel.
+Everything should be up and running, that is a Raspbian 32bit user-space on a 64bit linux kernel.
