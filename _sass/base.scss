@@ -10,6 +10,7 @@ $top-font-size:        32px !default;
 $title-font-size:      28px !default;
 $subtitle-font-size:   20px !default;
 $mobile-font-size:     14px !default;
+$print-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  1000px !default;
@@ -27,6 +28,7 @@ a { text-decoration: underline;  color: $accent-color; }
 a:hover { color: $background-color; background-color: $base-color; }
 .primary-text { color: $primary-color; }
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
+@media only print { * { font-size: $print-font-size !important; } }
 /*h1:before { content: "#";  margin-right: 9px; }
 h2:before { content: "##";  margin-right: 9px; }
 h3:before { content: "###";  margin-right: 9px; }
@@ -38,6 +40,7 @@ h6:before { content: "######";  margin-right: 9px; }*/
  * Layout
  */
 .container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
+@media only print { .container { width: 100%;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; } }
 p { word-wrap: break-word;  word-break: break-word;  white-space: pre-wrap; }
 footer { color: $text-color;  border-top: $border;  margin: 20px auto 15px;  padding-top: 10px;  text-align: right; }
 header { margin-top: 25px;  margin-bottom: 10px; }

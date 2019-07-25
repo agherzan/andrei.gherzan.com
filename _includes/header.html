@@ -1,23 +1,37 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
 	<div class="container">
-	  <div class="site-title">
-		  <a href=/>[./Andrei_Gherzan]> \(</a>
-	  </div>
-	  <div class="site-subtitle">
-		  <a href=/>bash: (: command not found</a>
-	  </div>
-	  </div>
-  <div class="panel">
-	<div class="container menu">
-    <ul>
-      {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title -%}
-        <li><a href="{{ my_page.url | relative_url }}">{{ my_page.menu | escape }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </div>
+		{% if page.title == "/ceevee" %}
+			<div class="site-title">
+				<a href=/>Andrei Gherzan</a>
+			</div>
+			<div class="site-subtitle">
+				Head of Devices at <a href=https://balena.io>balena</a>
+			</div>
+		{% else %}
+			<div class="site-title">
+				<a href=/>[./Andrei_Gherzan]> \(</a>
+			</div>
+			<div class="site-subtitle">
+				<a href=/>bash: (: command not found</a>
+			</div>
+		{% endif %}
+	</div>
+
+	<div class="panel">
+		<div class="container menu">
+			<ul>
+				{% if page.title == "/ceevee" %}
+					<a href="mailto:andrei@gherzan.ro">andrei[at]gherzan[dot]ro</a> | <a href="https://andrei.gherzan.ro">https://andrei[dot]gherzan[dot]ro</a    > | <a href="https://github.com/agherzan">GitHub</a>
+				{% else %}
+					{%- for path in page_paths -%}
+						{%- assign my_page = site.pages | where: "path", path | first -%}
+						{%- if my_page.title -%}
+							<li><a href="{{ my_page.url | relative_url }}">{{ my_page.menu | escape }}</a></li>
+						{%- endif -%}
+					{%- endfor -%}
+				{% endif %}
+			</ul>
+		</div>
 	</div>
 </header>
