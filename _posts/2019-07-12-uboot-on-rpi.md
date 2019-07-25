@@ -44,8 +44,10 @@ We will be using version `v2019.07` in this guide. [Upstream](https://gitlab.den
 ```sh
 git clone https://github.com/agherzan/u-boot.git u-boot
 cd u-boot
-git checkout ag/rpi4
+git checkout ag/v2019.07-rpi4-wip
 ```
+
+There is also a backport branch for `v2019.01`: [ag/v2019.01-rpi4-wip](https://github.com/agherzan/u-boot/tree/ag/v2019.01-rpi4-wip).
 
 We have the code, now we can proceed to compilation. We will be using different defconfigs based on the targeted board as it follows:
 
