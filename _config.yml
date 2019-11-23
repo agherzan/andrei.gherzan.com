@@ -19,6 +19,8 @@ permalink: /:categories/:title/
 
 include: ['key.asc']
 
+exclude: ['helpers']
+
 defaults:
   - scope:
       path: "assets/img"
