@@ -6,6 +6,7 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}
 <small>{{ page.date | date: "%Y-%m-%d" }}</small>
+<small>Reading time: {{ content | reading_time }}</small>
 </p>
 
 {{ content }}
