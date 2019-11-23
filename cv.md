@@ -14,7 +14,10 @@ Senior software engineer with strength in embedded software architecture and dev
 
 ## Experience
 
-`2015-present`
+`2019.10 - present`
+__Senior Linux OS Engineer / Software Technical Lead at [Hanover Displays](https://hanoverdisplays.com/)__ - _Lewes, United Kingdom_
+
+`2015.06 - 2019.10`
 __Head of Devices at [balena](https://www.balena.io/)__ - _London, United Kingdom_
 - Add and maintain [Yocto](https://www.yoctoproject.org/) support for more than 20 embedded devices part of the `balena` ecosystem (e.g. `Raspberry Pi`, `Beaglebone`, `UpBoard`, `NUC`).
 - Maintain the host operating system (custom linux based distribution) developing various tools in Rust, Python and scripting languages.
