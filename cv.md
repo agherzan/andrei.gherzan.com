@@ -16,6 +16,15 @@ Senior software engineer with strength in embedded software architecture and dev
 
 `2019.10 - present`
 __Senior Linux OS Engineer / Software Technical Lead at [Hanover Displays](https://hanoverdisplays.com/)__ - _Lewes, United Kingdom_
+- Lead the software implementation and design of the internal Linux based Operating System targeting public transport platforms - `Yocto`, C, shell, python.
+- Develop and maintain the `BSP` for various ARM based internal custom boards - C.
+- Design and implement system update features for various internal projects.
+- Advise, design and optimise the applications development loop integrated with the project's build infrastructure.
+- Advise, design and implement security on Linux based operating systems.
+- Optimize boot and runtime metrics for internal projects.
+- Work closely with the IT team to maintain and develop the `DevOps` infrastructure - container based, orchestrated with tools like docker-compose.
+- Actively involved in requirement definitions and associated work unit estimations for new and existing products.
+- Contribute to `opensource` projects used internally - `Yocto`, `bmaptool`, `psplash`, various `Linux kernel` forks etc.
 
 `2015.06 - 2019.10`
 __Head of Devices at [balena](https://www.balena.io/)__ - _London, United Kingdom_
