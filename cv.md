@@ -5,7 +5,7 @@ permalink: /cv
 ---
 ## Summary
 
-Senior software engineer with strength in embedded software architecture and development along with consistent experience in automotive industry and open-source.
+Software engineer with strength in embedded software architecture and development along with consistent experience in the automotive industry and open-source.
 
 * embedded software development
 * open-source development and technologies
@@ -14,9 +14,15 @@ Senior software engineer with strength in embedded software architecture and dev
 
 ## Experience
 
-`2019.10 - present`
+`2020.12 - present`
+__Principal Open Source Architect [Huawei](https://www.huawei.com/)__ - _London, United Kingdom_
+- Architect the `IoT` software stack.
+- Design architecture documents and translate business requirements and customer requirements into themes, features, that the development team can execute upon.
+- Key maintainer in open source projects.
+
+`2019.10 - 2020.12`
 __Senior Linux OS Engineer / Software Technical Lead at [Hanover Displays](https://hanoverdisplays.com/)__ - _Lewes, United Kingdom_
-- Lead the software implementation and design of the internal Linux based Operating System targeting public transport platforms - `Yocto`, C, shell, python.
+- Lead the software implementation and design of the internal Linux based Operating System and SDK targeting public transport platforms - `Yocto`, C, shell, python.
 - Develop and maintain the `BSP` for various ARM based internal custom boards - C.
 - Design and implement system update features for various internal projects.
 - Advise, design and optimise the applications development loop integrated with the project's build infrastructure.
