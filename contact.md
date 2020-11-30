@@ -10,6 +10,6 @@ permalink: /contact
 
 Me, Andrei Gherzan.
 
-Email: andrei[at]gherzan[dot]ro
+Email: andrei[at]gherzan[dot]com
 
 [GPG key](/key.asc) \| [GitHub](https://github.com/agherzan/) \| [Twitter](https://twitter.com/agherzan) \| [LinkedIn](https://www.linkedin.com/in/agherzan/)
