@@ -7,3 +7,5 @@ gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
 gem 'jekyll-redirect-from'
 gem "kramdown-parser-gfm"
+
+gem "webrick", "~> 1.7"
