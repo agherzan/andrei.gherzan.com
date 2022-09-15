@@ -14,6 +14,26 @@ Software engineer with strength in embedded software architecture and developmen
 
 ## Experience
 
+`2022.01 - present`
+__Project Management Committee (PMC) Member - [Oniro Project](https://projects.eclipse.org/projects/oniro)__ - _London, United Kingdom_
+Key responsibilities:
+
+- Providing the leadership and vision to guide the Project's overall direction and architecture.
+- Providing assistance and support to the developers and researchers working on the Project by removing obstacles, solving problems, and resolving conflicts.
+- Ensuring that Project plans are produced.
+- Working with the Eclipse Management Organization (the "EMO") to establish the development processes and infrastructure needed for the development team to be effective.
+- Coordinating relationships with other Eclipse Foundation Projects.
+- Facilitating code or other donations by individuals or companies.
+- Working with the EMO and Committers to ensure in-bound contributions are made in accordance with the Eclipse Foundation IP Policy.
+
+See the [Eclipse Foundation charter](https://www.eclipse.org/eclipse/eclipse-charter.php) for more information.
+
+Project links:
+
+[Eclipse Foundation project page](https://projects.eclipse.org/projects/oniro)
+[Oniro Project Documentation](https://docs.oniroproject.org/en/latest/index.html)
+[Oniro Project - main website](https://oniroproject.org/)
+
 `2020.12 - present`
 __Principal Open Source Architect [Huawei](https://www.huawei.com/)__ - _London, United Kingdom_
 - Architect the `IoT` software stack.
@@ -72,6 +92,7 @@ Project: Internal Automotive Project
 
 `2012-present`
 __[Member](http://www.openembedded.org/wiki/Organization) of [OpenEmbedded](https://www.openembedded.org/)__
+OpenEmbedded is the build framework for embedded Linux. OpenEmbedded offers a best-in-class cross-compile environment. It allows developers to create a complete Linux Distribution for embedded systems.
 
 `2012-present`
 __Maintainer and contributor at [Yocto Project](git.yoctoproject.org)__
@@ -80,7 +101,7 @@ __Maintainer and contributor at [Yocto Project](git.yoctoproject.org)__
 - Projects: [meta-raspberrypi](https://github.com/agherzan/meta-raspberrypi), [meta-chip](https://github.com/agherzan/meta-chip)
 
 ## Skills
-- Embedded Systems, Embedded Software, Embedded Linux, Bash, C, Python, Rust, Device Drivers, Linux Kernel, Yocto, Buildbot, QNX, git
+- Embedded Systems, Embedded Software, Embedded Software Architecture, Embedded Linux, BSP, bash, C, Python, Rust, golang, Device Drivers, Linux Kernel, Integration, Debugging, Yocto, git, CI, GitLab, GitHub
 - English, German, Romanian
 
 ## Education
@@ -133,16 +154,10 @@ Activities and societies:
 - Papers published in National Physics Conference 2006
 - Olympics: 2002 Chemistry, Mathematics 2004, Physics 2004
 
-## Certifications
-
-Cisco:
-- CCNA Discovery Introducing Routing and Switching in the Enterprise
-- CCNA Discovery Networking for Home and Small Businesses
-- CCNA Discovery Working at a Small-to-Medium Business or ISP
-- Cisco Fundamentals of Java Programming
-- Cisco IT Essentials I & II
-
 ## Awards
+
+`2022`
+2022 Honours List - Open Source Software - [OpenUK](https://openuk.uk/2022HonoursList/)
 
 `2013`
 Most Valuable Contributor - [Genivi](http://www.genivi.org/)
